@@ -1,0 +1,9 @@
+.heroDiv {
+    width: 75vw;
+    height: 50vh;
+    background: lightslategray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

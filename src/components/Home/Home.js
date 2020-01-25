@@ -1,17 +1,25 @@
 import React, { useState, useContext } from 'react';
+import "./Home.css";
 import { SiteContext } from '../../context';
+import HeroBox from "../HeroBox/HeroBox";
 
 const Home = () => {
-    const { state, dispatch } = useContext(SiteContext);
-    
-    const isDev = state.devState == true;
+    const { state } = useContext(SiteContext);
+    const isDev = state.devState === true;
+    const [heroopen, setHeroopen] = useState(true);
+    const isOpen = heroopen === true;
 
     console.log(state);
 
     return(
-        <div>
-            <h1>This is the home page.</h1>
-            <div>
+        <div className="Home">
+            {isOpen && 
+                <div className="HeroBox">
+                    <HeroBox />
+                </div>
+            }
+            {!isOpen &&
+            <div className="Timeline">
                 {isDev &&
                     <h3>Eric is a developer.</h3>
                 }
@@ -19,6 +27,7 @@ const Home = () => {
                     <h3>Eric is a marketer.</h3>
                 }
             </div>
+            }
         </div>
     );
 }
