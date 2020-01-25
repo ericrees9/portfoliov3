@@ -8,12 +8,12 @@ const HeroBox = () => {
 
     return(
         <div className="heroDiv">
-            <h2>ERIC REES</h2>
+            <h1 className="heroH1">ERIC REES</h1>
             {isDev &&
-                <h3>is a developer.</h3>
+                <h3>DEVELOPMENT</h3>
             }
             {!isDev &&
-                <h3>is a marketer.</h3>
+                <h3>MARKETING</h3>
             }
         </div>
     );
