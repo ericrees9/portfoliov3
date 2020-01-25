@@ -1,0 +1,24 @@
+.switchDiv {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    max-height: 2em;
+}
+
+.devSwitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    max-height: 2em;
+    background-color: lightcoral;
+}
+
+.markSwitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    max-height: 2em;
+    background-color: lightcyan;
+}

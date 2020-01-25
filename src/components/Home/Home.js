@@ -11,7 +11,6 @@ const Home = () => {
     return(
         <div>
             <h1>This is the home page.</h1>
-            <button onClick={() => dispatch({ type: "toggle" })}>Change State</button>
             <div>
                 {isDev &&
                     <h3>Eric is a developer.</h3>

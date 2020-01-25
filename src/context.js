@@ -2,8 +2,10 @@ import React, { createContext, useReducer } from 'react';
 
 let reducer = (state, action) => {
     switch (action.type) {
-        case "toggle":
-            return {...state, devState: !state.devState};
+        case "devTrue":
+            return {...state, devState: true};
+        case "devFalse":
+            return {...state, devState: false};    
         default:
             return;
     }
