@@ -14,19 +14,19 @@ const Home = () => {
     return(
         <div className="Home">
             {isOpen && 
-                <div className="HeroBox">
+                <div className="HeroBox" onClick={() => setHeroopen(false)}>
                     <HeroBox />
                 </div>
             }
             {!isOpen &&
-            <div className="Timeline">
-                {isDev &&
-                    <h3>Eric is a developer.</h3>
-                }
-                {!isDev &&
-                    <h3>Eric is a marketer.</h3>
-                }
-            </div>
+                <div className="Timeline">
+                    {isDev &&
+                        <h3>Eric is a developer.</h3>
+                    }
+                    {!isDev &&
+                        <h3>Eric is a marketer.</h3>
+                    }
+                </div>
             }
         </div>
     );
