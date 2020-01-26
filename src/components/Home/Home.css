@@ -13,10 +13,19 @@
     margin-bottom: 20vh;
 }
 
-.Timeline {
+.Content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-align: center;
+}
+
+.Timeline {
+    width: 100vw;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

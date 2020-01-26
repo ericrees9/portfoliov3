@@ -1,0 +1,11 @@
+.Box {
+    background: black;
+    color: white;
+    width: 47vw;
+    height: 47vh;
+    margin-top: .7em;
+    margin-bottom: .7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

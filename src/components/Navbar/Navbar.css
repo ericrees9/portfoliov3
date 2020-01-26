@@ -5,5 +5,19 @@
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.Name {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    padding-left: 3em;
+}
+
+.Menu {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row-reverse;
+    padding-right: 3em;
 }

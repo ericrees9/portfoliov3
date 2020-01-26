@@ -1,16 +1,18 @@
 .App {
   height: 100vh;
+  max-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;
-  overflow: hidden;
-}
-
-.Home {
-  flex: 1 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative
 }
 
 .SwitchBar {
-  flex-shrink: 0;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

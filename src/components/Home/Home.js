@@ -3,6 +3,7 @@ import "./Home.css";
 import { SiteContext } from '../../context';
 import HeroBox from "../HeroBox/HeroBox";
 import Navbar from "../Navbar/Navbar";
+import Timeline from '../Timeline/Timeline';
 
 const Home = () => {
     const { state } = useContext(SiteContext);
@@ -20,14 +21,14 @@ const Home = () => {
                 </div>
             }
             {!isOpen &&
-                <div className="Timeline">
+                <div className="Content">
                     <Navbar />
-                    {isDev &&
-                        <h3>Eric is a developer.</h3>
-                    }
-                    {!isDev &&
-                        <h3>Eric is a marketer.</h3>
-                    }
+                    <div className="Timeline">
+                        <Timeline />
+                        <Timeline />
+                        <Timeline />
+                        <Timeline />
+                    </div>
                 </div>
             }
         </div>
