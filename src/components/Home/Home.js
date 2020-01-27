@@ -7,7 +7,7 @@ import Timeline from '../Timeline/Timeline';
 
 const Home = () => {
     const { state } = useContext(SiteContext);
-    const isDev = state.devState === true;
+    // const isDev = state.devState === true;
     const [heroopen, setHeroopen] = useState(true);
     const isOpen = heroopen === true;
 
