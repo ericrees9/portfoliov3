@@ -1,8 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import Home from "./components/Home/Home";
-import SwitchBar from "./components/SwitchBar/SwitchBar"
-import { StateProvider } from './context';
+import SwitchBar from "./components/SwitchBar/SwitchBar";
+import { StateProvider } from "./context";
 
 const App = () => {
   return (
@@ -13,6 +13,6 @@ const App = () => {
       </StateProvider>
     </div>
   );
-}
+};
 
 export default App;

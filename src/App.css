@@ -5,14 +5,15 @@
   flex-direction: column;
   justify-content: space-between;
   overflow-x: hidden;
-  overflow-y: auto;
-  position: relative
+  overflow-y: scroll;
+}
+
+.Home {
+  display: flex;
+  flex-grow: 2;
 }
 
 .SwitchBar {
   display: flex;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  align-self: flex-end;
 }
