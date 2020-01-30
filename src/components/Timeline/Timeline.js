@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./Timeline.css";
-import { SiteContext } from "../../context";
+import { DevContext } from "../../Contexts/devContext";
 
 const Timeline = () => {
-  const { state } = useContext(SiteContext);
+  const { state } = useContext(DevContext);
   const isDev = state.devState === true;
 
   return (

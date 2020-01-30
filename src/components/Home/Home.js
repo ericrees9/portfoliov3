@@ -1,13 +1,16 @@
 import React, { useState, useContext } from "react";
 import "./Home.css";
-import { SiteContext } from "../../context";
+import { DevContext } from "../../Contexts/devContext";
+// import { MenuContext } from "../../Contexts/menuContext";
 import HeroBox from "../HeroBox/HeroBox";
 import Navbar from "../Navbar/Navbar";
 import Timeline from "../Timeline/Timeline";
 
 const Home = () => {
-  const { state } = useContext(SiteContext);
-  // const isDev = state.devState === true;
+  const { state } = useContext(DevContext);
+  const isDev = state.devState === true;
+  // const { state } = useContext(MenuContext);
+  // const isMenu = state.menuState === true;
   const [heroopen, setHeroopen] = useState(true);
   const isOpen = heroopen === true;
 

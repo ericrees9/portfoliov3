@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import "./Navbar.css";
-import { SiteContext } from "../../context";
+import SwitchBar from "../SwitchBar/SwitchBar";
+import { MenuContext } from "../../Contexts/menuContext";
 
 const Navbar = () => {
-  const { state, dispatch } = useContext(SiteContext);
+  const { state, dispatch } = useContext(MenuContext);
 
   console.log(state);
 
@@ -12,8 +13,11 @@ const Navbar = () => {
       <div className="Name">
         <h1>ERIC REES</h1>
       </div>
+      <div className="Switch">
+        <SwitchBar />
+      </div>
       <div className="Menu">
-        <h1 onClick={() => dispatch({ type: "toggle" })}>MENU</h1>
+        <h1 onClick={() => dispatch({ type: "menuOpen" })}>MENU</h1>
       </div>
     </div>
   );

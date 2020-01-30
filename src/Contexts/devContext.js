@@ -12,16 +12,16 @@ let reducer = (state, action) => {
 };
 
 const initialState = { devState: true };
-const SiteContext = createContext(initialState);
+const DevContext = createContext(initialState);
 
-const StateProvider = props => {
+const DevProvider = props => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <SiteContext.Provider value={{ state, dispatch }}>
+    <DevContext.Provider value={{ state, dispatch }}>
       {props.children}
-    </SiteContext.Provider>
+    </DevContext.Provider>
   );
 };
 
-export { StateProvider, SiteContext };
+export { DevProvider, DevContext };

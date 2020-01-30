@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./SwitchBar.css";
-import { SiteContext } from "../../context";
+import { DevContext } from "../../Contexts/devContext";
 
 const SwitchBar = () => {
-  const { state, dispatch } = useContext(SiteContext);
+  const { state, dispatch } = useContext(DevContext);
 
   return (
     <div className="switchDiv">
